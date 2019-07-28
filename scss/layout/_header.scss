@@ -1,0 +1,86 @@
+.header {
+    background-color: #081734;
+    padding: 25px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        img {
+            @media screen and (max-width: 480px) {
+                width: 70%;
+            }
+        }
+    }
+    .navigation {
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        &__link {
+            margin-right: 60px;
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            @media screen and (max-width: 1024px) {
+                margin-right: 10px;
+                margin-left: 10px;
+                text-align: center;
+            }
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        &__btn {
+            margin-right: 100px;
+            @media screen and (max-width: 1024px) {
+                margin-right: 60px;
+            }
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        &__login {
+            font-size: 17px;
+            color: #0bafa0;
+            margin-right: 30px;
+            position: relative;
+            @media screen and (max-width: 1024px) {
+                margin-right: 10px;
+
+            }
+            &::after {
+                content: '';
+                background-image: url('../img/icons/Userpic.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 45px;
+                height: 45px;
+                display: block;
+                position: absolute;
+                top: -15px;
+                left: - 55px;
+                @media screen and (max-width: 480px) {
+                    width: 40px;
+                    height: 40px;
+                    background-size: 100%;
+                }
+            }
+        }
+        &__lang {
+            display: block;
+            width: 31px;
+            height: 23px;
+            background-image: url('../img/rus.png');
+            @media screen and (max-width: 480px) {
+                width: 29px;
+                height: 20px;
+                background-size: 100%;
+            }
+        }
+    }
+
+    .main-btn {
+        padding: 13px 15px 13px;
+    }
+}
